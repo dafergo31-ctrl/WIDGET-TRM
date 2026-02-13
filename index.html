@@ -59,7 +59,7 @@
         }
 
         .status-bar {
-            background: rgba(255,255,255,0.2);
+            background: #1e293b;
             backdrop-filter: blur(10px);
             border-radius: 50px;
             padding: 8px 16px;
@@ -488,17 +488,7 @@
         
     </div>
 
-       <!-- Estadísticas -->
-   <div class="stats-grid animate-in" style="animation-delay: 0.4s">
-        <div class="stat-card">
-            <div class="stat-label">Apertura Hoy</div>
-            <div class="stat-value" id="statOpen">-</div>
-        </div>
-        <div class="stat-card">
-            <div class="stat-label">Cierre Ayer</div>
-            <div class="stat-value" id="statClose">-</div>
-        </div>
-    </div>
+ 
 
     <!-- Botones de Acción -->
     <div class="action-bar animate-in" style="animation-delay: 0.2s">
@@ -536,7 +526,18 @@
         </div>
     </div>
 
- 
+       <!-- Estadísticas -->
+   <div class="stats-grid animate-in" style="animation-delay: 0.4s">
+       
+        <div class="stat-card">
+            <div class="stat-label">Cierre Ayer</div>
+            <div class="stat-value" id="statClose">-</div>
+        </div>
+         <div class="stat-card">
+            <div class="stat-label">Apertura Hoy</div>
+            <div class="stat-value" id="statOpen">-</div>
+        </div>
+    </div>
 
 
     <!-- Footer -->
