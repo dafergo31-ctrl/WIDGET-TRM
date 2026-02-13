@@ -14,8 +14,8 @@
         }
 
         :root {
-            --primary: #0f766e;
-            --primary-dark: #134e4a;
+            --primary: #09b4a6;
+            --primary-dark: #06bb8e;
             --primary-light: #14b8a6;
             --accent: #f59e0b;
             --danger: #ef4444;
@@ -330,12 +330,12 @@
         }
 
         .btn-primary {
-            background: var(--primary);
+            background: #1e293b;
             color: white;
         }
 
         .btn-primary:hover {
-            background: var(--primary-dark);
+            background: #0b5d83;
             transform: translateY(-2px);
         }
 
@@ -460,8 +460,8 @@
 <div class="container">
     <!-- Header -->
     <div class="header animate-in">
-        <h1>NOAVCOMEX TRM Colombia</h1>
-        <p>Datos Oficiales - Superfinanciera</p>
+        <h1>NOAVCOMEX | TRM COLOMBIA</h1>
+        <p>Datos Oficiales - Banco de la República</p>
         <div class="status-bar" id="statusBar">
             <div class="status-dot" id="statusDot"></div>
             <span id="statusText">Conectando...</span>
@@ -489,7 +489,7 @@
     </div>
 
        <!-- Estadísticas -->
-    <div class="stats-grid animate-in" style="animation-delay: 0.4s">
+   <div class="stats-grid animate-in" style="animation-delay: 0.4s">
         <div class="stat-card">
             <div class="stat-label">Apertura Hoy</div>
             <div class="stat-value" id="statOpen">-</div>
@@ -542,7 +542,9 @@
     <!-- Footer -->
     <div class="footer">
         <p>Fuente: Superintendencia Financiera de Colombia</p>
-        <p style="margin-top: 5px; opacity: 0.7;">Via DolarApi.com | Datos actualizados diariamente</p>
+        <p>Desarrollado por NOAVCOMEX | Daniel Gonzalez</p>
+        <p style="margin-top: 5px; opacity: 0.7;">Datos actualizados diariamente</p>
+       
     </div>
 </div>
 
@@ -715,7 +717,7 @@ class TRMApp {
         };
         const fechaStr = this.fecha.toLocaleDateString('es-CO', opciones);
         document.getElementById('trmDate').textContent = 
-            `Vigente desde: ${fechaStr.charAt(0).toUpperCase() + fechaStr.slice(1)}`;
+            `Vigente: ${fechaStr.charAt(0).toUpperCase() + fechaStr.slice(1)}`;
         
         // Última actualización
         const horaStr = this.ultimaActualizacion.toLocaleTimeString('es-CO', {
